@@ -4,17 +4,18 @@ import org.junit.Test;
 
 public class MainClassTest {
 
-    MainClass class1 = new MainClass();
+    MainClass main = new MainClass();
 
     int checkNumber = 14;
-    int actual1 = class1.getLocalNumber(16);
+    int actualNumber = main.getLocalNumber(16);
+
     @Test
     public void testGetLocalNumber() {
-        if (checkNumber != actual1) {
-            Assert.fail("Method return not 14 value");
+        if (checkNumber != actualNumber) {
+            Assert.fail("Method to return number equal 14 doesn't work correcly");
         }
             else {
-                System.out.println("Success");
+                System.out.println("Test Passed");
             }
         }
 }
