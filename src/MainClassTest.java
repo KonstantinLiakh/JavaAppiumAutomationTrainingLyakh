@@ -31,4 +31,14 @@ public class MainClassTest {
         }
     }
 
+    @Test
+    public void testGetClassString() {
+        if (main.getClassString().contains("hello") || main.getClassString().contains("Hello")) {
+            System.out.println("Test passed");
+        }
+        else {
+            Assert.fail("Sting doesn't contain words: hello, Hello");
+        }
+    }
+
 }

@@ -1,6 +1,12 @@
 public class MainClass {
 
     private int class_number = 20;
+    private String class_string = "Hello, world";
+
+    public String getClassString () {
+        this.class_string=class_string;
+        return class_string;
+    }
 
     public int getClassNumber () {
         this.class_number=class_number;
