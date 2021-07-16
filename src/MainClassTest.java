@@ -9,6 +9,8 @@ public class MainClassTest {
     int checkNumber = 14;
     int actualNumber = main.getLocalNumber(16);
 
+    int classNumber = main.getClassNumber();
+
     @Test
     public void testGetLocalNumber() {
         if (checkNumber != actualNumber) {
@@ -18,4 +20,15 @@ public class MainClassTest {
                 System.out.println("Test Passed");
             }
         }
+
+    @Test
+    public void testGetClassNumber() {
+        if (classNumber > 45) {
+            System.out.println("Test passed");
+        }
+        else {
+            Assert.fail("class_number is actually les than 45");
+        }
+    }
+
 }
